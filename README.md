@@ -20,9 +20,9 @@ Este proyecto corresponde al desarrollo de un sitio web profesional para la empr
 El stack tecnológico se encuentra en evaluación. Algunas opciones en análisis incluyen:
 
 - HTML, CSS, JavaScript
-- Frameworks como React, Angular o Vue
-- Backend con Node.js, Java (Spring), o PHP (Laravel)
-- Bases de datos como MySQL o PostgreSQL
+- Frameworks como React
+- Backend Java (Spring)-Spring-boot
+- Bases de datos como MySQL
 
 ## 🗂️ Estructura prevista
 
