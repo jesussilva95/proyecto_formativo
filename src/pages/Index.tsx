@@ -102,39 +102,6 @@ const Index = () => {
     },
   ];
 
-  // Mock data for projects
-  const projects = [
-    {
-      id: 1,
-      title: "Residencial Verde",
-      location: "Zona Este, Ciudad",
-      units: 120,
-      completion: "2025",
-      priceFrom: "$180,000",
-      image: "/placeholder.svg",
-      status: "En Construcción",
-    },
-    {
-      id: 2,
-      title: "Torres del Sol",
-      location: "Centro, Ciudad",
-      units: 80,
-      completion: "2024",
-      priceFrom: "$220,000",
-      image: "/placeholder.svg",
-      status: "Pre-venta",
-    },
-    {
-      id: 3,
-      title: "Complejo Familiar",
-      location: "Zona Sur, Ciudad",
-      units: 200,
-      completion: "2026",
-      priceFrom: "$150,000",
-      image: "/placeholder.svg",
-      status: "Planeación",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -372,94 +339,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-navy-800 mb-4">
-              Proyectos en Desarrollo
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Invierte en el futuro con nuestros proyectos inmobiliarios. Desde
-              pre-venta hasta entrega, te acompañamos en cada paso de tu
-              inversión.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <Card
-                key={project.id}
-                className="overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="relative">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <Badge
-                    className={`absolute top-4 left-4 ${
-                      project.status === "En Construcción"
-                        ? "bg-orange-500"
-                        : project.status === "Pre-venta"
-                          ? "bg-blue-500"
-                          : "bg-gray-500"
-                    }`}
-                  >
-                    {project.status}
-                  </Badge>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-lg font-semibold text-navy-800">
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className="flex items-center text-gray-500">
-                    <MapPin className="h-4 w-4 mr-1" />
-                    {project.location}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 text-sm text-gray-600 mb-4">
-                    <div className="flex justify-between">
-                      <span>Unidades:</span>
-                      <span className="font-medium">{project.units}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Entrega:</span>
-                      <span className="font-medium">{project.completion}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Desde:</span>
-                      <span className="font-bold text-gold-600">
-                        {project.priceFrom}
-                      </span>
-                    </div>
-                  </div>
-                  <Button className="w-full bg-gold-500 hover:bg-gold-600">
-                    Más Información
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-gold-500 text-gold-600 hover:bg-gold-500 hover:text-white"
-            >
-              <Link to="/proyectos">
-                Ver Todos los Proyectos
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Why Choose Us */}
       <section className="py-16 bg-gray-50">
