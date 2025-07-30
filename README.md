@@ -23,13 +23,6 @@ Este proyecto corresponde al desarrollo de un sitio web profesional para la empr
 - **Estilos:** TailwindCSS
 - **Control de versiones:** Git + GitHub
 
-## 🗂️ Estructura del Proyecto
-
-inmobiliaria-leal/
-├── frontend/        → Proyecto React (interfaz de usuario)
-├── backend/         → Proyecto Spring Boot (lógica de negocio y API)
-└── README.md
-
 
 ## ▶️ Cómo ejecutar el proyecto
 
