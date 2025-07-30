@@ -26,8 +26,8 @@ Este proyecto corresponde al desarrollo de un sitio web profesional para la empr
 ## 🗂️ Estructura del Proyecto
 
 inmobiliaria-leal/
-├── frontend/ → Proyecto React (interfaz de usuario)
-├── backend/ → Proyecto Spring Boot (lógica de negocio y API)
+├── frontend/        → Proyecto React (interfaz de usuario)
+├── backend/         → Proyecto Spring Boot (lógica de negocio y API)
 └── README.md
 
 
@@ -35,17 +35,17 @@ inmobiliaria-leal/
 
 ## 🖥 Backend (Spring Boot)
 
--bash
--cd backend
--./mvnw spring-boot:run
+- bash
+- cd backend
+- ./mvnw spring-boot:run
 
 
 ## 🌐 Frontend (React + Vite)
 
 - bash
--cd frontend
--npm install
--npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 
 ## 🗂️ Estructura prevista
