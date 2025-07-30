@@ -15,14 +15,38 @@ Este proyecto corresponde al desarrollo de un sitio web profesional para la empr
 🚧 *En desarrollo*  
 > Este es un proyecto de estudio con proyección empresarial. Aún no se ha definido el stack tecnológico final.
 
-## 🧰 Tecnologías (por definir)
+## 🧰 Tecnologías en uso (actual)
 
-El stack tecnológico se encuentra en evaluación. Algunas opciones en análisis incluyen:
+- **Frontend:** React + TypeScript + Vite
+- **Backend:** Java + Spring Boot
+- **Base de datos:** MySQL (planeado)
+- **Estilos:** TailwindCSS
+- **Control de versiones:** Git + GitHub
 
-- HTML, CSS, JavaScript
-- Frameworks como React
-- Backend Java (Spring)-Spring-boot
-- Bases de datos como MySQL
+## 🗂️ Estructura del Proyecto
+
+inmobiliaria-leal/
+├── frontend/ → Proyecto React (interfaz de usuario)
+├── backend/ → Proyecto Spring Boot (lógica de negocio y API)
+└── README.md
+
+
+## ▶️ Cómo ejecutar el proyecto
+
+## 🖥 Backend (Spring Boot)
+
+-bash
+-cd backend
+-./mvnw spring-boot:run
+
+
+## 🌐 Frontend (React + Vite)
+
+- bash
+-cd frontend
+-npm install
+-npm run dev
+
 
 ## 🗂️ Estructura prevista
 
