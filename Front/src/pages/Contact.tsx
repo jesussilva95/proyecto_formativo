@@ -53,10 +53,10 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-gold-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-navy-800 mb-2">
-                  Nuestra Oficina
+                  Nuestra Oficinas
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Av. Principal 123, Centro
+                  Av. Principal 1234, Centro
                   <br />
                   Ciudad, País 12345
                 </p>
