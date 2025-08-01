@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activar Formspree</title>
+</head>
+<body>
+    <h2>Activar tu formulario de Formspree</h2>
+    <p>Haz click en el botón para activar automáticamente tu formulario:</p>
+    
+    <button onclick="activateForm()" id="activateBtn">Activar Formulario</button>
+    <div id="status"></div>
+
+    <script>
+        async function activateForm() {
+            const btn = document.getElementById('activateBtn');
+            const status = document.getElementById('status');
+            
+            btn.disabled = true;
+            btn.textContent = 'Activando...';
+            status.textContent = 'Enviando email de activación...';
+            
+            try {
+                const response = await fetch('https://formspree.io/f/xyzppevq', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: 'test@example.com',
+                        message: 'Activación de formulario',
+                        name: 'Test'
+                    })
+                });
+                
+                if (response.ok) {
+                    status.innerHTML = '<span style="color: green;">✅ Formulario activado exitosamente!</span>';
+                } else {
+                    status.innerHTML = '<span style="color: orange;">⚠️ Formulario enviado para activación. Revisa tu email.</span>';
+                }
+            } catch (error) {
+                status.innerHTML = '<span style="color: red;">❌ Error: ' + error.message + '</span>';
+            }
+            
+            btn.disabled = false;
+            btn.textContent = 'Activar Formulario';
+        }
+    </script>
+</body>
+</html>
